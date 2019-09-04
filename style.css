@@ -1,0 +1,20 @@
+body
+{   
+    background-size: cover;
+    background-attachment: fixed;
+    background-image:url(Background.jpg) 
+}
+div {
+    align-self: center;
+    background-color: rgba(1, 9, 51, 0.651);
+    width: 300px;
+    height: 300px;
+    border: 02px solid rgb(170, 243, 248);
+    padding: 50px;
+    margin: 50px;
+    font-family: 'Dosis', sans-serif;color: rgb(170, 243, 248)
+}
+h1 {
+    padding: 25px;
+    font-family: 'Bree Serif', serif; color: rgb(170, 243, 248)
+}
