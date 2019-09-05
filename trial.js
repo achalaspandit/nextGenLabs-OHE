@@ -36,26 +36,26 @@ var p,u=0;
 var nearv=[50];
 var t=matrix(rows,3);
 var mincost=0;
-for(i=2;i<=rows;i++)
+for(i=1;i<rows;i++)
 {
     nearv[i]=1;
 }
-nearv[1]=0;
+nearv[0]=0;
 for(i=0;i<rows;i++)
 {
     let min=999;
     for(j=0;j<rows;j++)
     {    p= nearv[j];
-        if(nearv[j]!=0 && ((result[j][p])<min))
+        if(nearv[j]!=0 && result[j][p]<min)
         {
             min=result[j][nearv[j]];
             u=j;
         }
         
     }
-    t[i][1]=u;
-    t[i][2]=nearv[u];
-    t[i][3]= min;
+    t[i][1]=++u;
+    t[i][2]=++nearv[u];
+    t[i][3]=min;
     mincost+=min;
     nearv[u]=0;
     for(k=0;k<rows;k++)

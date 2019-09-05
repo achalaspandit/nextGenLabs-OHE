@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MST</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Dosis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    
+</head>
+<body>
+        <h1 align="center">MST using Prim's Algorithm</h1>
+    
+    <div >
+        Insert text file <br>
+        <input type="file" id="textfile" accept=".txt"/>
+        <p id="demo"></p>
+        <script>
+            var input=document.getElementById("textfile");
+            input.addEventListener("change", function(){
+                var rows,i,k,j;
+                let fs = require('fs');
+                let all = fs.readFileSync('textfile', "utf8");  
+                all = all.trim();
+                let lines = all.split("\r\n");
+                rows= lines.length;
+                let result=[];
+                for (let i = 0; i < rows; ++i) 
+                {   
+                    let tokens = lines[i].split(' ');
+                    result.push(tokens);
+                }
+                for (i=0;i<rows;i++)
+                        {   for(j=0; j<rows; j++)
+                                result[i][j]= parseInt(result[i][j]);
+                        }
+               
+
+            })
+        </script>
+    </div>
+</body>
+</html>

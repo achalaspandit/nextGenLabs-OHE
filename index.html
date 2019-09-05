@@ -1,50 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>Graph Algorithm</title>
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Dosis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     
     
 </head>
 <body>
-        <h1>Graph Algorithms</h1>
-    
-    <div >
-        Insert text file <br>
-        <input type="file" id="textfile" accept=".txt"/>
-        <p id="demo"></p>
-        <script>
-            var rows;
-            function fileinsert()
-            {
-                var x = document.getElementById("textfile");
-                if ('files' in x) 
-                {
-                    if (!(x.files.length == '0'))
-                    {
-                        let fs = require('fs');
-                        let all = fs.readFileSync(x, "utf8");  // giant string
-                        all = all.trim();  // strip final crlf in file
-                        let lines = all.split("\r\n");
-                        rows= lines.length;
-                        var matrix=[];
-                        for (let i = 0; i < rows; ++i) 
-                        {   
-                            let tokens = lines[i].split(' ');
-                            matrix.push(tokens);
-                        }
-                        for (i=0;i<rows;i++)
-                        {   for(j=0; j<rows; j++)
-                                matrix[i][j]= parseInt(matrix[i][j]);
-                        }
-                    console.log(matrix);
-            
-                    }
-                } 
-            document.getElementById("demo").innerHTML = matrix;
-            }
-        </script>
+        <h1 align="center">Graph Algorithms</h1>
+        <div style="float:left; margin:20px">
+            <img src="MST.png" alt="Minimum Spanning tree" align="center" style="width:450px;height:350px;">
+            <p><br></p>
+            <button><a href="MST.html" >Minimum Spanning Tree</a></button>
+        </div>
+        <div style="float:left; margin:20px">
+            <img src="SPA.jpg" alt="Shortest Path" align="center" style="width:450px;height:350px;">
+            <p><br></p>
+            <button><a href="SPA.html" >Shortest Path</a></button>
+        </div>
     </div>
 </body>
 </html>

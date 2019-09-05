@@ -7,14 +7,30 @@ body
 div {
     align-self: center;
     background-color: rgba(1, 9, 51, 0.651);
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 450px;
     border: 02px solid rgb(170, 243, 248);
     padding: 50px;
-    margin: 50px;
+    margin: 80px;
     font-family: 'Dosis', sans-serif;color: rgb(170, 243, 248)
 }
 h1 {
     padding: 25px;
     font-family: 'Bree Serif', serif; color: rgb(170, 243, 248)
+}
+button{
+    align-self: center;
+    background-color: rgb(170, 243, 248);
+    width: 250px;
+    height: 15px;
+    padding: 25px;
+    border: 02px solid rgb(1, 9, 51);
+    font-family: 'Noto Serif', serif; color: black;
+}
+a{
+    text-decoration: none;
+    text-decoration-color: black;
+}
+.colors a{
+    color: black;
 }
