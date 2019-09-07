@@ -27,6 +27,6 @@ input.addEventListener("change", function(){
             }
         }
     }
-    document.getElementById("res").innerHTML=result
+    document.getElementById("output").innerHTML=result
 
 })

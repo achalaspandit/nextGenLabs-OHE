@@ -11,31 +11,14 @@
         <h1 align="center">MST using Prim's Algorithm</h1>
     
     <div >
-        Insert text file <br>
+            Insert a text file containing the adjacency matrix of the graph such that nodes that are not connected by an edge is indicated by 999 and diagonal elements are 0 (indicating the absence of self loops)
+            <br><br>
+            Insert the text file below<br>
         <input type="file" id="textfile" accept=".txt"/>
-        <p id="demo"></p>
+        <p>Output: Format[vertex1,vertex2,cost]</p>
+        <p id="output"></p>
         <script>
-            var input=document.getElementById("textfile");
-            input.addEventListener("change", function(){
-                var rows,i,k,j;
-                let fs = require('fs');
-                let all = fs.readFileSync('textfile', "utf8");  
-                all = all.trim();
-                let lines = all.split("\r\n");
-                rows= lines.length;
-                let result=[];
-                for (let i = 0; i < rows; ++i) 
-                {   
-                    let tokens = lines[i].split(' ');
-                    result.push(tokens);
-                }
-                for (i=0;i<rows;i++)
-                        {   for(j=0; j<rows; j++)
-                                result[i][j]= parseInt(result[i][j]);
-                        }
-               
-
-            })
+            
         </script>
     </div>
 </body>
