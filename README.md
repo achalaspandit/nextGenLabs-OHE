@@ -10,8 +10,10 @@ The problem statement 1 defined how twgraph algorithms has to be implemented usi
 
 
 WHAT WE LEARNT :
+
 TECHNICAL:
 We started with understanding the basics of JavaScript and moving on with learning a little about the JavaScript framework Nodejs , mainly it's file systems. We then brushed through HTML and CSS with the necessary topics needed for the project. Later we learnt how to work with git version control. Finally we learnt a lot of concepts and techniques while debugging the errors we encountered.
+
 NON TECHNICAL: 
 Since all the concepts used were new to us, we first started off by splitting the project into smaller tasks and started working on them initially. We split the tasks among the two so that we could learn faster and teach each other. After completing each of the smaller tasks we finally integrated them together. We worked together as a team and tried to speak to many people when we had doubts. At every step we kept each other motivated in spite of the obstacles.
 
