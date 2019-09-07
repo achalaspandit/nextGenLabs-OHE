@@ -33,14 +33,20 @@
                                 result[i][j]=result[i][k]+result[k][j];
                             
                         }
+                        result[i][j]='\n';
                     }
                 }
                 for(i=0;i<rows;i++)
                     for(j=0;j<rows;j++)
                         if(i==j)
                                 result[i][j]=0;
-
-				document.getElementById('main').innerHTML= result;
+                //result.toString();
+                for(i=0;i<rows;i++)
+                    {   for(j=0;j<rows;j++)
+                        document.getElementById('main').innerHTML= result;
+                    document.write(" <br> ")
+                    }
+                        //document.getElementById('main').innerHTML= result;
 			};
 			reader.readAsText(that.files[0]);
 		}
@@ -49,6 +55,6 @@
 </head>
 <body>
 	<input type="file" onchange='readText(this)' />
-	<div id="main"></div>
+	<p id="main"> </p>
   </body>
 </html>
