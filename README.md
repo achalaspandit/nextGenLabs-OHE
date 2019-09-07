@@ -2,7 +2,6 @@
 WEB BASED GRAPH ALGORITHMS
 
                         - Achala S Pandit
-                        
                         - Anagha K
 
                     
